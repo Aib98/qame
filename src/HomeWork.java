@@ -1,5 +1,3 @@
-import Test.GameTest;
-
 public class HomeWork {
 
     /*
@@ -13,10 +11,7 @@ public class HomeWork {
     public static void main(String[] args) {
         new GameTest().testGameEgualResult();
         new GameTest().testGameRangeOfValues();
-        new GameTestTwo().testGameRangeOfValues();
-
-
-
+        new GameTest().testDiceNegativeValue();
+        new GameTest().testPlayerConstructor();
     }
-
 }

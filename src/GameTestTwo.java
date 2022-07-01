@@ -22,6 +22,7 @@ public class GameTestTwo {
 
     public void testGameRangeOfValues (){
         String scenario = "Тест на значения от 1 до 6";
+
         try {
             String expected = "Ничья";
 
