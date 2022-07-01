@@ -9,8 +9,8 @@ public class GameTest {
         String scenario = "Тест на ничью";
         System.out.println(scenario);
 
-        Player alex = new Player("Alex");
-        Player oleg = new Player("Oleg");
+        Player vasa = new Player("Вася");
+        Player igor = new Player("Игорь");
         Dice dice = new DiceTest();
 
         Game game = new Game(dice, new GameWinnerPrinter() {
@@ -25,7 +25,7 @@ public class GameTest {
             }
         });
 
-        game.playGame(alex, oleg);
+        game.playGame(vasa, igor);
     }
 
     public void testGameRangeOfValues() {
@@ -74,7 +74,7 @@ public class GameTest {
         String scenario = "Тест на конструктор игрока";
         System.out.println(scenario);
 
-        String name = "Alex";
+        String name = "Игорь";
         Player player = new Player(name);
 
         if (player.getName().equals(name)) {
